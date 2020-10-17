@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magnus Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <h2 class="title-form">Silahkan Isi Data Diri Anda</h2>
+	<div class="login ">
+		<form action="#" >
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama"/>
+            </div>
+            <div>
+                <p>Jenis Kelamin:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Laki</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Perempuan</label><br>
+            </div>
+            <div>
+                <p>Hobi:</p>
+                <input type="checkbox" id="vehicle" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Sepakbola</label><br>
+                <input type="checkbox" id="vehicle" name="vehicle2" value="Car">
+                <label for="vehicle2"> Coding</label><br>
+                <input type="checkbox" id="vehicle" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Makan</label><br><br>
+            </div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+            </div>
+            <div>
+				<label id="telpon">Telp:</label>
+				<input type="number" name="tepl" id="telp" />
+            </div>
+            <div>
+				<label id="usernam">Username:</label>
+				<input pattern="\s*(\S\s*){10,}" title="Name should have at least 10 characters." type="text" name="username" id="username" />
+			</div>
+			<div>
+				<label class="password">Password:</label>
+                <input pattern="\s*(\S\s*){7,}" title="Name should have at least 7 characters." type="password" name="password" id="password" />
+			</div>
+			<div class="wrapper-cta">
+                <input type="submit" value="Daftar" id="tombol-submit">
+				<input type="submit" value="Reset" class="tombol">
+			</div>
+		</form>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
